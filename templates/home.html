@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask API Documentation</title>
+    <style>
+        /* Dark Theme Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #121212;
+            color: #E0E0E0;
+            margin: 20px;
+            padding: 0;
+        }
+        h1, h2 {
+            border-left: 5px solid rgb(212, 205, 205);
+            padding-left: 25px;
+
+            font-weight: lighter;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #ffffff;
+        }
+        a {
+            color: #64B5F6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .center{
+            text-align: center;
+            border:none;
+            font-size: 50px;
+            font-weight: lighter;
+        }
+        pre {
+            background: #1E1E1E;
+            color: #C3E88D;
+            padding: 10px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            overflow-x: auto;
+            padding-left: 10px;
+            /* text-align: center; */
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .endpoint {
+            font-family: "Courier New", Courier, monospace;
+            color: #f3ede6;
+        }
+        ul {
+            list-style-type: circle;
+            margin-left: 20px;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="center">Welcome to the Flask API for Code Execution</h1>
+    <p>This API allows you to execute Python code securely via POST requests. Below are the details of how to use this API effectively.</p>
+
+    <div class="section">
+        <h2>API Endpoint</h2>
+        <p>Send a POST request to the following endpoint:</p>
+        <p class="endpoint">POST /execute</p>
+    </div>
+
+    <div class="section">
+        <h2>Request Format</h2>
+        <p>The API expects a JSON payload containing the Python code to execute. Example:</p>
+        <div class="box">
+            <pre>
+    
+                {
+                    "code": "print('Hello, World!')"
+                }
+            </pre>
+
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Response Format</h2>
+        <p>The response will be a JSON object containing the output or error messages from the executed code:</p>
+        <div class="box">
+            <pre>
+
+            {
+                "output": "Hello, World!\n"
+            }
+                    </pre>
+                    <p>If there is an error in the code:</p>
+                    <pre>
+            {
+                "success": false,
+                "error": "SyntaxError: unexpected EOF while parsing"
+            }
+            </pre>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Example Usage</h2>
+        <p>You can test this API using tools like <a href="https://www.postman.com/" target="_blank">Postman</a> or with a Python script using the <code>requests</code> library:</p>
+        <div class="box">
+
+            <pre>
+                import requests
+    
+                url = "http://127.0.0.1:5000/execute"
+                payload = {
+                    "code": "print('Hello, Flask!')"
+                }
+                response = requests.post(url, json=payload)
+    
+                if response.status_code == 200:
+                    print("Response:", response.json())
+                else:
+                    print("Failed to connect:", response.status_code)
+            </pre>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Notes</h2>
+        <ul>
+            <li>Ensure the Python code you send is safe and does not include malicious commands.</li>
+
+        </ul>
+    </div>
+
+</body>
+</html>
