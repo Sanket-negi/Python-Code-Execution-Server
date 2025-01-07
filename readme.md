@@ -21,21 +21,19 @@ Before getting started, make sure you have the following installed:
 - pip (Python package manager)
 # Setup Instructions
 
-#### 1. Clone the Repository
+### 1. Clone the Repository
 First, clone the repository to your local machine:
 
 git clone https://github.com/rahul-shrivastav/Python-Code-Execution-Server.git
 
 
 
-#### 2. Install Dependencies
+### 2. Install Dependencies
 Install the required Python dependencies by running:
 
 pip install -r requirements.txt
 
-If you are using Docker for isolation, ensure Docker is installed and running on your machine.
-
-#### 3. Running the Flask Server
+### 3. Running the Flask Server
 To start the Flask server locally, run:
 
 python app.py
