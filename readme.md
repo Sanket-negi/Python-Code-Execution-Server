@@ -8,10 +8,10 @@ Support for Python 3.x: The API uses Python 3.x for code execution.
 Timeout Handling: Limits execution time to prevent infinite loops or long-running code.
 
 ## Tech Stack
-- Python : versatile, high-level, interpreted, easy-to-learn programming language.
-- Flask: A lightweight Python web framework to build APIs.
-- Subprocess: Used to run Python code in a separate process.
-- Timeouts: To prevent long or malicious code from running indefinitely.
+- ` Python ` : versatile, high-level, interpreted, easy-to-learn programming language.
+- ` Flask `: A lightweight Python web framework to build APIs.
+- ` Subprocess `: Used to run Python code in a separate process.
+- ` Timeouts ` : To prevent long or malicious code from running indefinitely.
 
 
 ## Prerequisites
@@ -24,19 +24,19 @@ Before getting started, make sure you have the following installed:
 ### 1. Clone the Repository
 First, clone the repository to your local machine:
 
-git clone https://github.com/rahul-shrivastav/Python-Code-Execution-Server.git
+`git clone https://github.com/rahul-shrivastav/Python-Code-Execution-Server.git`
 
 
 
 ### 2. Install Dependencies
 Install the required Python dependencies by running:
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 ### 3. Running the Flask Server
 To start the Flask server locally, run:
 
-python app.py
+`python app.py`
 
 This will start the server on http://localhost:5000.
 
