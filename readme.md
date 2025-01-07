@@ -25,7 +25,7 @@ Before getting started, make sure you have the following installed:
 First, clone the repository to your local machine:
 
 
-```http
+```bash
 git clone https://github.com/rahul-shrivastav/Python-Code-Execution-Server.git
 ```
 
@@ -33,12 +33,16 @@ git clone https://github.com/rahul-shrivastav/Python-Code-Execution-Server.git
 ### 2. Install Dependencies
 Install the required Python dependencies by running:
 
-`pip install -r requirements.txt`
+```bash
+pip install -r requirements.txt
+```
 
 ### 3. Running the Flask Server
 To start the Flask server locally, run:
 
-`python app.py`
+```bash
+python app.py
+```
 
 This will start the server on http://localhost:5000.
 
