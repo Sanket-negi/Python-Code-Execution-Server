@@ -24,8 +24,10 @@ Before getting started, make sure you have the following installed:
 ### 1. Clone the Repository
 First, clone the repository to your local machine:
 
-`git clone https://github.com/rahul-shrivastav/Python-Code-Execution-Server.git`
 
+```http
+git clone https://github.com/rahul-shrivastav/Python-Code-Execution-Server.git
+```
 
 
 ### 2. Install Dependencies
