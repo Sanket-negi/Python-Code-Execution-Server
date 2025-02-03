@@ -48,7 +48,7 @@ To start the Flask server locally, run:
 python app.py
 ```
 
-This will start the server on http://localhost:5000.
+This will start the server on port `5000` locally.
 
 ## API Reference
 
